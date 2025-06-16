@@ -6,7 +6,7 @@ const API_KEY = process.env.REACT_APP_OMDB_API_KEY;
 
 const App = () => {
   const [movies, setMovies] = useState([]);
-  const [searchTerm, setSearchTerm] = useState('Avengers');
+  const [searchTerm, setSearchTerm] = useState('Pulimurugan');
 
   const searchMovies = async (title) => {
     const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${title}`);
